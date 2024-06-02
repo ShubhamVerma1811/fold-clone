@@ -1,0 +1,44 @@
+/* import karla from g fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Karla';
+	/* background-color: #0A2D67; */
+}
+
+.dottedBg {
+	background-image: radial-gradient(#b9bdd0 5%, transparent 0);
+	background-size: 48px 48px;
+	background-color: #b9bdd0b2;
+	background-color: rgb(240 241 245/1);
+}
+
+/* hide scroll bar */
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* hide scroll bar firefox */
+
+html {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+/* hide scroll bar ie 10+ */
+
+body {
+	-ms-overflow-style: none;
+}
+
+/* hide scroll bar safari and chrome */
+
+body {
+	-webkit-overflow-scrolling: touch;
+}
